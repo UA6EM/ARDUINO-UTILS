@@ -45,6 +45,7 @@ int strobe_low(int pin){
 void loop() {
   digitalWrite(13,digitalRead(9));
  // if (int strobe=(strobe_high(pin_strobe)) == 1) digitalWrite(1,!digitalRead(1));
-  if (int strobe=(strobe_low(pin_strobe)) == 1) digitalWrite(1,!digitalRead(1));
+//  if (int strobe=(strobe_low(pin_strobe)) == 1) digitalWrite(1,!digitalRead(1));
+  if (strobe_low(pin_strobe)) digitalWrite(1,!digitalRead(1));
   
 }
